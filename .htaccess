@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteBase /shopping
+RewriteCond $1 !^(index\.php|images|main_template|assets|img_product|img_shop|template|img_menu|img_bgimages|img_thumb|img_banner|admin|class|module)
+
+RewriteRule ^(.*)$ index.php/$1 [L]
+RewriteRule ^(.*)/login$ admin/index.php/$1 [L]

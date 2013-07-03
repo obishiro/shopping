@@ -1,0 +1,88 @@
+/* ---------------------------------------------------- */
+/* GLOBAL
+/* ---------------------------------------------------- */
+html {
+font-size: 100%;}
+
+ 
+
+/* ---------------------------------------------------- */
+/* SLIDESHOW
+/* ---------------------------------------------------- */
+#slideshows {
+width: 99%;
+background-color: #FFF;
+border: 1px solid #ddd;}
+
+#slideshows ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+height: 1%; /* IE fix */}
+
+#slideshows ul:after {
+content: ".";
+clear: both;
+display: block;
+height: 0;
+visibility: hidden;}            
+
+/* ---------------------------------------------------- */
+/* SLIDESHOW > SLIDES
+/* ---------------------------------------------------- */
+#slideshows .slides {
+overflow: hidden;
+width: 99%;}
+
+#slideshows .slides ul {
+width: 2880px;}
+
+#slideshows .slides li {
+width: 920px;
+float: left;
+padding: 20px;}
+
+#slideshows .slides h2 {
+margin-top: 0;}
+
+/* ---------------------------------------------------- */
+/* SLIDESHOW > NAVIGATION
+/* ---------------------------------------------------- */
+#slideshows .slides-nav {
+background-color: #fff;
+border-bottom: 1px solid #eaeaea;}
+
+#slideshows .slides-nav li {
+ 
+color:#000;	
+float: left;}
+
+#slideshows .slides-nav li a {
+text-decoration: none;
+color:#fff;	
+display: block;
+padding: 13px 20px;
+outline: none;
+background: url(images/bar-shop-a.png) repeat-x;
+font-weight:bold;
+border-right:1px solid #eaeaea;
+font-size: 14px;
+}
+
+.js #slideshows .slides-nav li.on,
+.js #slideshows .slides-nav li.on a:link {
+background: url(images/bar-shop.png) repeat-x;
+font-weight:bold;
+color:#fff;
+font-size: 20px;
+}
+
+.js #slideshows .slides-nav li a:hover {
+background: url(images/bar-shop.png) repeat-x;
+font-weight:bold;
+color:#fff;
+}
+
+.js #slideshows .slides-nav li.on a {
+position: relative;
+top: -2px;}
